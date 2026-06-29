@@ -1,0 +1,13 @@
+name = "cloudflare-temp-email"
+main = "src/worker.ts"
+compatibility_date = "2025-04-01"
+compatibility_flags = [ "nodejs_compat" ]
+keep_vars = true
+routes = [
+  { pattern = "temp-email-api.dzjd.fun", custom_domain = true },
+]
+
+[[d1_databases]]
+binding = "DB"
+database_name = "temp-email-db"
+database_id = "75ca643d-8cf5-4f9d-b31e-7e3e6321cb05"
